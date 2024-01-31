@@ -19,7 +19,7 @@ const projects: Project[] = [
   {
     title: "Astro / Template",
     techs: ["Astro"],
-    link: "/"
+    link: "/",
   },
 ];
 
