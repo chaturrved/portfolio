@@ -14,7 +14,7 @@ const presentation: Presentation = {
   mail: "chaturved.deg@gmail.com",
   title: "Hi, I’m Chaturved 👋",
   description:
-    "Namaste, I'm a *indian software programmer* with over *3 years* of hands on development experience. I am currently working with *NextJS, ReactJS, Angular, NestJS and Typescript*. Outside of work I really enjoy basketball and understanding history.",
+    "Namaste, I'm a *Indian software programmer* with over *3 years* of hands on development experience. I am currently working with *NextJS, ReactJS, Angular, NestJS and Typescript*. Outside of work I really enjoy basketball and understanding history.",
   socials: [
     {
       label: "Twiiter",
