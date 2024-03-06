@@ -5,11 +5,13 @@ import Layout from "@/layouts/Layout.astro";
 import SocialLinks from "@/components/SocialLinks.astro";
 import PostCard from "@/components/PostCard.astro";
 import ProjectCard from "@/components/ProjectCard.astro";
+import SkillCard from "@/components/SkillTab.astro";
 import Link from "@/components/shared/Link.astro";
 import convertAsteriskToStrongTag from "@/utils/convertAsteriskToStrongTag";
 
 import presentation from "@/data/presentation";
 import projects from "@/data/projects";
+import skills, { SkillCardProps } from "@/data/skills";
 
 const posts = await getCollection("posts");
 ---
@@ -48,6 +50,23 @@ const posts = await getCollection("posts");
         }
       </section>
     </article> -->
+
+    <article class="flex flex-col gap-8">
+      <header class="flex w-full flex-row justify-between gap-2">
+        <h3 class="text-lg text-neutral-100">
+          Skills
+        </h3>
+      </header>
+      {Object.keys(skills).length === 0 && <p class="text-xl text-orange-500">Oops, I must get to work ^-^ !</p>}
+
+      <section class="flex flex-col gap-4">
+        {
+          skills.length !== 0 &&
+            skills.map(({type, skillGroup}: SkillCardProps) => <SkillCard type={type} skillGroup={skillGroup} />)
+        }
+      </section>
+      
+    </article>
 
     <article class="flex flex-col gap-8">
       <header class="flex w-full flex-row justify-between gap-2">

@@ -15,6 +15,7 @@ const projects: Project[] = [
     title: "Firstly",
     techs: ["React Native", "JavaScript"],
     link: "https://codenanshu.in/projects/firstly/",
+    isComingSoon: true,
   },
   {
     title: "Astro / Template",
