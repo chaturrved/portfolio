@@ -19,7 +19,9 @@
     "tailwindcss": "^3.3.2"
   },
   "devDependencies": {
+    "@iconify-json/devicon": "^1.1.35",
     "@iconify-json/logos": "^1.1.42",
+    "@iconify-json/skill-icons": "^1.1.8",
     "@iconify/tailwind": "^0.1.4",
     "@typescript-eslint/parser": "5.59.7",
     "eslint": "8.41.0",
